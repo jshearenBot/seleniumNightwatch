@@ -12,7 +12,7 @@ hub:
 	selenium-standalone start -- -role hub -hubConfig ./gridConfig/hub.json
 
 node:
-	selenium-standalone start -- -role node -hub http://macpro.local:4444/grid/register -nodeConfig ./gridConfig/node.json -host "macpro.local"
+	selenium-standalone start -- -role node -hub http://localhost:4444/grid/register -nodeConfig ./gridConfig/node.json -host "localhost"
 
 deps:
 	npm install selenium-standalone@latest -g
